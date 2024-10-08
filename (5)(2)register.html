@@ -58,7 +58,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     document.getElementById('registerForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita o envio do formulário
+        event.preventDefault(); 
 
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
@@ -68,17 +68,14 @@
 
         const feedback = document.getElementById('feedback');
 
-        // Validação simples
+        
         if (password !== confirmPassword) {
             feedback.innerText = 'As senhas não coincidem.';
             return;
         }
-
-        // Aqui você pode adicionar lógica para armazenar os dados do usuário
-        // (por exemplo, localStorage ou uma chamada de API)
-
+        
         alert('Registro bem-sucedido!');
-        window.location.href = 'login.html'; // Redireciona para a página de login
+        window.location.href = 'login.html'; 
     });
 </script>
 
