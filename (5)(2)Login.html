@@ -47,14 +47,13 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
     document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Evita o envio do formulário
+        event.preventDefault();
         const email = document.getElementById('email').value;
         const senha = document.getElementById('senha').value;
 
-        // Lógica de autenticação (exemplo simplificado)
         if (email === "usuario@example.com" && senha === "senha123") {
             alert('Login bem-sucedido!');
-            window.location.href = 'home.html'; // Redireciona para a página inicial
+            window.location.href = 'home.html';
         } else {
             document.getElementById('feedback').innerText = 'Email ou senha incorretos. Tente novamente.';
         }
