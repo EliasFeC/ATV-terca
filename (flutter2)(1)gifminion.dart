@@ -22,7 +22,7 @@ class Home extends StatelessWidget {
           child: Stack(
             textDirection: TextDirection.ltr,
             children: <Widget>[
-              // Gradiente de fundo
+            
               Container(
                 width: 250,
                 height: 250,
@@ -40,9 +40,9 @@ class Home extends StatelessWidget {
               ),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.0), // Margem horizontal
+                  padding: const EdgeInsets.symmetric(horizontal: 15.0), 
                   child: Image.network(
-                    'https://i.giphy.com/xT0xezQGU5xCDJuCPe.webp', // URL da imagem
+                    'https://i.giphy.com/xT0xezQGU5xCDJuCPe.webp', 
                     width: 250, 
                     height: 100, 
                     fit: BoxFit.cover,
@@ -56,10 +56,10 @@ class Home extends StatelessWidget {
       backgroundColor: Colors.blue[900],
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // Add your action here
+          
           print("FAB pressed!");
         },
-        tooltip: "Exemplo de botão",
+        tooltip: "Botão",
         child: const Icon(Icons.add),
       ),
     );
